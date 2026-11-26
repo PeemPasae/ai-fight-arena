@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-ENGINE_SRC = ROOT.parent / "lkemon"          # Ikemen GO install the arena engine is copied from
+ENGINE_SRC = ROOT / "ikemen"                 # Ikemen GO kept in git; engine/ is built from it on first run
 ENGINE = ROOT / "engine"                     # the one shared engine every match runs on
 DATA = ROOT / "data"
 SUBMISSIONS = ROOT / "submissions"

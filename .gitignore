@@ -1,14 +1,9 @@
-# engine: copied from Ikemen GO (ENGINE_SRC) on first run - only our telemetry mod is kept in git
-engine/*
-!engine/external/
-engine/external/*
-!engine/external/mods/
-engine/external/mods/*
-!engine/external/mods/general_bot_telemetry.lua
+# engine/ is built from ikemen/ (kept in git) on first run, plus the installed characters
+/engine/
 
 # private: players' names, uploads, admin token, logs, DB backups
-data/
-submissions/
+/data/
+/submissions/
 *.log
 
 # generated / personal

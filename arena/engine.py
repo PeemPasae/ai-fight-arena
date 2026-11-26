@@ -149,6 +149,8 @@ class Side:
         if not self.bot_path:
             return
         bot = Path(self.bot_path)
+        if not bot.is_absolute():                  # moved arenas store bots relative to the arena folder
+            bot = config.ROOT / bot
         self.log = open(log_dir / f"{tag}_p{self.slot}_bot.log", "w", encoding="utf-8")
         cmd = [sys.executable, str(bot), "--player", str(self.slot), "--game-dir", str(config.ENGINE)]
         self.proc = subprocess.Popen(cmd, cwd=bot.parent, stdout=self.log, stderr=subprocess.STDOUT,

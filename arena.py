@@ -1,7 +1,7 @@
 """AI Fight Arena - a shared Ikemen GO tournament server with a live web view.
 
   python arena.py                 start the server (http://<this PC>:8080)
-  python arena.py setup           (re)build the shared engine from ../lkemon
+  python arena.py setup           (re)build the shared engine from ikemen/
   python arena.py add-local --name "General Bot" --char ..\\lkemon\\chars\\general --bot ..\\bot\\general_bot.py
   python arena.py list            show entries
 """
